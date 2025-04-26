@@ -1,7 +1,16 @@
 {
   "expo": {
-    "name": "Clothesline_App",
-    "slug": "Clothesline_App",
-    "version": "1.0.0"
+    "name": "Clothesline App",
+    "slug": "clothesline-app",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.clotheslineapp",
+      "googleServicesFile": "./android/app/google-services.json"
+    },
+    "splash": {
+      "image": "./assets/images/splash_icon.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#DAE4ED"
+    }
   }
 }
