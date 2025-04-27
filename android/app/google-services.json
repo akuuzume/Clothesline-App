@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "19841551899",
+    "project_id": "clotheslinemobile",
+    "storage_bucket": "clotheslinemobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19841551899:android:578cc1a6d0f6414b8e72be",
+        "android_client_info": {
+          "package_name": "com.sandrakuuzume.clotheslinemobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrClIl4zLg-Kc91wDf5l_Whdbv5XEUmNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
