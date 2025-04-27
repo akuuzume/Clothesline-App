@@ -1,20 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import auth from '@react-native-firebase/auth';
 
-// Define navigation param list
-type RootStackParamList = {
-  '(screens)': undefined;
-  '(tabs)': undefined;
-};
-
-// Type the navigation prop
-type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
-
 export default function Login() {
-  const navigation = useNavigation<NavigationProp>();
+  const navigation = useNavigation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -26,8 +16,7 @@ export default function Login() {
     try {
       await auth().signInWithEmailAndPassword(email, password);
       console.log('Login successful');
-      console.log('Navigating to (tabs)');
-      navigation.navigate('(tabs)');
+      navigation.navigate("(tabs)");
     } catch (error) {
       console.error('Login error:', error.code, error.message);
       Alert.alert('Login Failed', 'Invalid email or password.');
